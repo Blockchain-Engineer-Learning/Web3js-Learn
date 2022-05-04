@@ -84,7 +84,7 @@ module.exports = function (deployer) {
 
 ### 配置truffle-config.js
 
-移除 truffle-config.js 中 `networks` 里的 `development` 注释，并修改端口为 7545 (Ganache所用端口)
+移除 truffle-config.js 中 `networks` 下的 `development` 注释，并修改端口为 7545 (Ganache所用端口)
 
 ![](IMG/network-config.png)
 
@@ -140,7 +140,7 @@ init();
 
 ![](IMG/Truffle-migrate_2.png)
 
-可以看到我们编写的迁移被执行，合约被部署到了本地的 Ganache 上，查看 Ganache 发现区块增加以及具体的 transcations
+可以看到我们编写的迁移脚本被执行，合约被部署到了本地的 Ganache 上，查看 Ganache 发现区块增加以及具体的 transactions
 
 执行 index.js 来调用 `MyContract` 合约中的 `getData()` 
 
